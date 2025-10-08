@@ -6,8 +6,11 @@ The project has important key metrics like valuation, funding, industry, top inv
 This project was carried out to understand how industries, companies in various geographic regions performed from 2012-2022. 
 
 ## Project question
+
 Here are the project objectives;
+
 	Identify industries and investors that demonstrate the highest ROI in the unicorn community?
+
 	Investigate how geographic region complement ROI and valuation?
 
 ## Data Structure 
