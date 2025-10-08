@@ -92,7 +92,7 @@ let
 in
     #"Added Fiscal Quarter"
 
-    ## Executive Summary
+ ## Executive Summary
     
 Despite the high funding, Fintech sector leads in both the number of unicorn and ROI, making it a sector for investment. The analysis also identifies Tiger Global Management and Sequoia Capital China as the most investors, which identify as high-growth companies. Around 2013-2014 ROI peaked at nearly100% but declined by 500% in 2022 which is as a result of a competitive market. North America and Asia dominated the unicorn community which indicate an innovative community. Tiger global management ranks as the top investor concentrating on funding power among top-tier firms. 
 While there is a positive relationship between total funding and total ROI, the highest ROI does not always correlate with the highest funding. For example, while ByteDance has a higher valuation, Stripe and Klarna show good ROI despite lower total funding.
