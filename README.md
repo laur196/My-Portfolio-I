@@ -15,6 +15,7 @@ Here are the project objectives;
 	Investigate how geographic region complement ROI and valuation?
 
 ## Data Structure 
+
 This Dataset contains important metrics such as valuation, funding and select investors from 2012 to 2022.
 
 	Factunicorn: This dataset contains key metrics such as funding, Valuation, Select Investors, industry, company, Geographic region. 
@@ -42,6 +43,7 @@ Calculated Metrics: ROI, Average Valuation, No. of Unicorn.
 ## Data Cleaning Action
 
 Here are the key cleaning operation
+
 	Removed Duplicate
 Purpose: A company name appeared twice but the difference was the location. I had to place the company side by side with their location and this enabled me avoid duplicate.
 
@@ -97,16 +99,22 @@ While there is a positive relationship between total funding and total ROI, the 
 
 ## Key Insight
 
-	Fintech leads with 716% ROI exceeding the average of 469.76% establishing it as the most lucrative sector while Supply chain/logistics shows 298% ROI . 
+	Fintech leads with 716% ROI exceeding the average of 469.76% establishing it as the most lucrative sector while Supply chain/logistics shows 298% ROI .
+
 	ByteDance shows good valuation-to-funding ratios, while Stripe and Klarna show good ROI despite lower total funding.
+
 	North America and Asia lead the global unicorn community in total valuation and funding, which indicate hubs for high-growth tech companies. 
+
 	Tiger global management ranks as the top investor concentrating on funding power among top-tier firms followed by Sequoia capital China, SIG Asia investment, Sina weibo and Softbank Group.
 
 ## Recommendation
 
 	Identify industries and investors that demonstrate the highest ROI in the unicorn community?
+
 Prioritize every sector by focusing on investment strategies on industries showing both high ROI and sustainable growth patterns such as Fintech, Internet software, and AI sectors which consistently deliver ROI  greater than 500%.
+
 	Investigate how geographic region complement ROI and valuation?
+
 There is need for markets diversification in regions like North America and Asia. Explore emerging unicorn to capture early-stage opportunities is a form of geographic diversification.
 
 
