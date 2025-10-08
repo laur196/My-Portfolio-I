@@ -42,7 +42,9 @@ Purpose: A company name appeared twice but the difference was the location. I ha
 Purpose: To understand my table better while I removed duplicate, I had to rename the row ‘company 2’ back to it initial name ‘Company’.
 
 	Converted Types
-Purpose: Valuation and funding columns were converted from text to numbers in other to make calculation possible for accurate analysis. 
+Purpose: Valuation and funding columns were converted from text to numbers in other to make calculation possible for accurate analysis.
+
+
 
 
 ![Unicorn Dashboard](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022).JPG)
