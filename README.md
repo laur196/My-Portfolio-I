@@ -44,6 +44,41 @@ Purpose: To understand my table better while I removed duplicate, I had to renam
 	Converted Types
 Purpose: Valuation and funding columns were converted from text to numbers in other to make calculation possible for accurate analysis.
 
+## Date Table Details
+The date was inserted into the StartDate and the last day was inserted as the EndDate and this helped to create a date table which contains day, week, month, month year, Quarter year, year.  
+Steps Details
+The date table was created through this method;
+let 
+// Create parameter 
+    StartDate = List.Min(FACT_Unicorn[Date Joined]),
+    EndDate = List.Max(FACT_Unicorn[Date Joined]),
+    Step = Duration.Days(EndDate - StartDate)+1, 
+// Create the List of date
+    Source = List.Dates(StartDate,Step, #duration(1,0,0,0)), 
+    #"Converted to Table" = Table.FromList(Source, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Changed Type" = Table.TransformColumnTypes(#"Converted to Table",{{"Column1", type date}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Date"}}),
+// Create additional columns 
+    #"Inserted Year" = Table.AddColumn(#"Renamed Columns", "Year", each Date.Year([Date]), Int64.Type),
+    #"Inserted Quarter" = Table.AddColumn(#"Inserted Year", "Quarter", each Date.QuarterOfYear([Date]), Int64.Type),
+    #"Inserted Quarter Year" = Table.AddColumn(#"Inserted Quarter", "Quarter Year", each Text.Combine({"Q", Text.From([Quarter], "en-US"), " ", Text.From([Year], "en-US")}), type text), 
+    #"Inserted Month" = Table.AddColumn(#"Inserted Quarter Year", "Month", each Date.Month([Date]), Int64.Type),
+    #"Inserted Month Name" = Table.AddColumn(#"Inserted Month", "Month Name", each Text.Start(Date.MonthName([Date]),3), type text),
+    #"Inserted Month Year" = Table.AddColumn(#"Inserted Month Name", "Month Year", each Text.Combine({[Month Name], " ", Text.From([Year], "en-US")}), type text),
+    #"Inserted Month Year S" = Table.AddColumn(#"Inserted Month Year", "Month Year S", each Text.Combine({Text.From([Year], "en-US"), Text.PadStart(Text.From([Month], "en-US"), 2, "0")}), type text),
+    #"Inserted End of Month" = Table.AddColumn(#"Inserted Month Year S", "End of Month", each Date.EndOfMonth([Date])),
+    #"Inserted Week Day Name" = Table.AddColumn(#"Inserted End of Month", "Week Day", each Text.Start(Date.DayOfWeekName([Date]),3), type text),
+    #"Inserted Day of Week" = Table.AddColumn(#"Inserted Week Day Name", "Day of Week", each Date.DayOfWeek([Date]), Int64.Type),
+    #"Inserted Day" = Table.AddColumn(#"Inserted Day of Week", "Day", each Date.Day([Date]), Int64.Type),
+    #"Inserted Week of Month" = Table.AddColumn(#"Inserted Day", "Week of Month", each Date.WeekOfMonth([Date]), Int64.Type),
+    #"Inserted Week of Month W" = Table.AddColumn(#"Inserted Week of Month", "Week", each Text.Combine({"W", Text.From([Week of Month], "en-US")}), type text),
+    #"Inserted Week of Year" = Table.AddColumn(#"Inserted Week of Month W", "Week of Year", each Date.WeekOfYear([Date]), Int64.Type),
+    #"Inserted Week of Year W" = Table.AddColumn(#"Inserted Week of Year", "Week of Year W", each Text.Combine({"W", Text.From([Week of Year], "en-US")}), type text),
+    #"Added Fiscal Month" = Table.AddColumn(#"Inserted Week of Year W", "Fiscal Month", each if Date.Month([Date]) <= 3 then Date.Month([Date]) + 9 else Date.Month([Date]) - 3),
+    #"Added Fiscal Year" = Table.AddColumn(#"Added Fiscal Month", "Fiscal Year", each if Date.Month([Date]) <= 3 then Date.Year([Date]) else Date.Year([Date]) + 1),
+    #"Added Fiscal Quarter" = Table.AddColumn(#"Added Fiscal Year", "Fiscal Quarter", each Number.RoundUp([Fiscal Month]/3))
+in
+    #"Added Fiscal Quarter"
 
 
 
