@@ -21,6 +21,30 @@ Metrics calculated for this table are : ROI(Divide(Total valuation-Total funding
 
 ![Unicorn data structure](https://github.com/laur196/My-Portfolio-I/blob/main/Unicorn%20Diagram.png)
 
+
+## Technical Details 
+This project used Power BI for all stages of data cleaning and analysis, with a focus on unicorn ROI across Industries and continent between 2012 and 2022.
+
+## Skill Details
+Skills: Format, Calculate, Aggregate Function(Sum, Divide, AVERAGEX)
+
+Steps Details
+Initial Inspection: Checked all source tables (DimDate, FactUnicorn) for missing values, duplicate entries and inconsistent data types.
+Cleaning & Standardization: Converted Types, Renamed Columns, removed Duplicate.
+Calculated Metrics: ROI, Average Valuation, No. of Unicorn.
+
+## Data Cleaning Action
+Here are the key cleaning operation
+	Removed Duplicate
+Purpose: A company name appeared twice but the difference was the location. I had to place the company side by side with their location and this enabled me avoid duplicate.
+
+	Renamed Column
+Purpose: To understand my table better while I removed duplicate, I had to rename the row ‘company 2’ back to it initial name ‘Company’.
+
+	Converted Types
+Purpose: Valuation and funding columns were converted from text to numbers in other to make calculation possible for accurate analysis. 
+
+
 ![Unicorn Dashboard](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022).JPG)
 
 ![Unicorn Dashboard](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022)%20II.JPG)
