@@ -24,7 +24,9 @@ Metrics calculated for this table are : ROI(Divide(Total valuation-Total funding
 
 	DimDate: The table contains column with day, weeks, months, month year and year.
 
+
 ![Unicorn data structure](https://github.com/laur196/My-Portfolio-I/blob/main/Unicorn%20Diagram.png)
+
 
 
 ## Technical Details 
