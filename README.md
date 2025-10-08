@@ -11,7 +11,8 @@ Here are the project objectives;
 	Investigate how geographic region complement ROI and valuation?
 
 ## Data Structure 
-This Dataset contains important metrics such as valuation, funding and select investors from 2012 to 2022. 
+This Dataset contains important metrics such as valuation, funding and select investors from 2012 to 2022.
+
 	Factunicorn: This dataset contains key metrics such as funding, Valuation, Select Investors, industry, company, Geographic region. 
 
 Metrics calculated for this table are : ROI(Divide(Total valuation-Total funding, Total funding), No of Unicorn(COUNTROWS(FILTER(FACT_Unicorn, FACT_Unicorn[valuation] >= 1000000000), Average Valuation(Average (FACT_Unicorn[Valuation])
