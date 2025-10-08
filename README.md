@@ -19,7 +19,9 @@ Metrics calculated for this table are : ROI(Divide(Total valuation-Total funding
 
 	DimDate: The table contains column with day, weeks, months, month year and year.
 
-![Unicorn data structure](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022).JPG)
+![Unicorn data structure](https://github.com/laur196/My-Portfolio-I/blob/main/Unicorn%20Diagram.png)
 
-![Unicorn data Structure](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022)%20II.JPG)
+![Unicorn Dashboard](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022).JPG)
+
+![Unicorn Dashboard](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022)%20II.JPG)
 
