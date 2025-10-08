@@ -80,6 +80,26 @@ let
 in
     #"Added Fiscal Quarter"
 
+    ## Executive Summary
+    
+Despite the high funding, Fintech sector leads in both the number of unicorn and ROI, making it a sector for investment. The analysis also identifies Tiger Global Management and Sequoia Capital China as the most investors, which identify as high-growth companies. Around 2013-2014 ROI peaked at nearly100% but declined by 500% in 2022 which is as a result of a competitive market. North America and Asia dominated the unicorn community which indicate an innovative community. Tiger global management ranks as the top investor concentrating on funding power among top-tier firms. 
+While there is a positive relationship between total funding and total ROI, the highest ROI does not always correlate with the highest funding. For example, while ByteDance has a higher valuation, Stripe and Klarna show good ROI despite lower total funding.
+
+## Key Insight
+
+	Fintech leads with 716% ROI exceeding the average of 469.76% establishing it as the most lucrative sector while Supply chain/logistics shows 298% ROI . 
+	ByteDance shows good valuation-to-funding ratios, while Stripe and Klarna show good ROI despite lower total funding.
+	North America and Asia lead the global unicorn community in total valuation and funding, which indicate hubs for high-growth tech companies. 
+	Tiger global management ranks as the top investor concentrating on funding power among top-tier firms followed by Sequoia capital China, SIG Asia investment, Sina weibo and Softbank Group.
+
+## Recommendation
+
+	Identify industries and investors that demonstrate the highest ROI in the unicorn community?
+Prioritize every sector by focusing on investment strategies on industries showing both high ROI and sustainable growth patterns such as Fintech, Internet software, and AI sectors which consistently deliver ROI  greater than 500%.
+	Investigate how geographic region complement ROI and valuation?
+There is need for markets diversification in regions like North America and Asia. Explore emerging unicorn to capture early-stage opportunities is a form of geographic diversification.
+
+
 
 
 ![Unicorn Dashboard](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022).JPG)
