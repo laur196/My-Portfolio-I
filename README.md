@@ -1,6 +1,7 @@
 # Investment Efficiency and Market Dynamics in the Global Unicorn Community: An Analysis of ROI Patterns and Industry Performance (2012-2022)
 
 ## Problem Statement
+
 Easy Currency is a financial platform that offer financial services to the public. With various ROI across sectors and funding, the operations team were interested in investigating how investment is efficient across sectors and what geographic region play a vital role in unicorn community. The team decide to design a trend chart to enable investors and stakeholders get an insight into which sectors, region and investment strategies delivers returns while managing risk in a competitive market.
 The project has important key metrics like valuation, funding, industry, top investors, geographic region and year founded.
 This project was carried out to understand how industries, companies in various geographic regions performed from 2012-2022. 
@@ -29,14 +30,17 @@ Metrics calculated for this table are : ROI(Divide(Total valuation-Total funding
 This project used Power BI for all stages of data cleaning and analysis, with a focus on unicorn ROI across Industries and continent between 2012 and 2022.
 
 ## Skill Details
+
 Skills: Format, Calculate, Aggregate Function(Sum, Divide, AVERAGEX)
 
 Steps Details
+
 Initial Inspection: Checked all source tables (DimDate, FactUnicorn) for missing values, duplicate entries and inconsistent data types.
 Cleaning & Standardization: Converted Types, Renamed Columns, removed Duplicate.
 Calculated Metrics: ROI, Average Valuation, No. of Unicorn.
 
 ## Data Cleaning Action
+
 Here are the key cleaning operation
 	Removed Duplicate
 Purpose: A company name appeared twice but the difference was the location. I had to place the company side by side with their location and this enabled me avoid duplicate.
@@ -48,8 +52,11 @@ Purpose: To understand my table better while I removed duplicate, I had to renam
 Purpose: Valuation and funding columns were converted from text to numbers in other to make calculation possible for accurate analysis.
 
 ## Date Table Details
-The date was inserted into the StartDate and the last day was inserted as the EndDate and this helped to create a date table which contains day, week, month, month year, Quarter year, year.  
+
+The date was inserted into the StartDate and the last day was inserted as the EndDate and this helped to create a date table which contains day, week, month, month year, Quarter year, year.
+
 Steps Details
+
 The date table was created through this method;
 let 
 // Create parameter 
