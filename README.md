@@ -21,5 +21,5 @@ Metrics calculated for this table are : ROI(Divide(Total valuation-Total funding
 
 ![Unicorn data structure](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022).JPG)
 
-![Unicorn data Structure](
+![Unicorn data Structure](https://github.com/laur196/My-Portfolio-I/blob/main/An%20Analysis%20of%20ROI%20Patterns%20and%20Industry%20Performance%20(2012-2022)%20II.JPG)
 
